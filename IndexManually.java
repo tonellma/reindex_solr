@@ -78,7 +78,7 @@ public void mySolrQuery(String host, String coreName, String nodeID, String acti
 	 // coreName.toLowerCase() not used as core name is case sensitive .. 
 	  System.out.println("Enter the path to the file with the list of nodes :");
 	  String  pathToListOfNodes = sc.nextLine();
-	  //
+	//
 	  
     try {
   
