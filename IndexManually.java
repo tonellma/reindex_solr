@@ -69,16 +69,16 @@ public void mySolrQuery(String host, String coreName, String nodeID, String acti
 	  System.out.println("What is the action required?" + "\n" + "1: INDEX" + "\n" + "2: REINDEX" + "\n" + "3: FIX" + "\n" + "4: PURGE"); 
 	//reads string  
 	 String action = sc.nextLine();
-	//  a.toLowerCase();
+	//  
 	  System.out.println("Enter the host name and port including http/https :");
 	  String  host = sc.nextLine();
-	//  host.toLowerCase();
+	//  
 	  System.out.println("Enter the core name  :");
 	  String  coreName = sc.nextLine();
-	 // coreName.toLowerCase();// core name is case sensitive .. to do 
+	 // coreName.toLowerCase() not used as core name is case sensitive .. 
 	  System.out.println("Enter the path to the file with the list of nodes :");
 	  String  pathToListOfNodes = sc.nextLine();
-	  //d.toLowerCase();
+	  //
 	  
     try {
   
@@ -96,7 +96,7 @@ public void mySolrQuery(String host, String coreName, String nodeID, String acti
     	        try {
     	    	    BufferedWriter writer = new BufferedWriter(new FileWriter("c:\\tmp\\log.log", true));
     	    	    writer.append('\n');
-    	            writer.append(data);
+    	          writer.append(data);
     	    	    writer.close();
     	    	    } catch (IOException e) 
     	            {
